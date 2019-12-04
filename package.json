@@ -1,13 +1,12 @@
 {
-  "name": "htest",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@hantet/htest",
+  "version": "1.0.1",
   "main": "build/index.js",
   "scripts": {
     "test": "jest --config jestconfig.json",
     "build": "tsc"
   },
-  "author": "",
+  "author": "Ivan Pakhomov",
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^24.0.23",
@@ -17,5 +16,17 @@
   },
   "dependencies": {
     "axios": "^0.19.0"
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IvanPakhomov/htest.git"
+  },
+  "bugs": {
+    "url": "https://github.com/IvanPakhomov/htest/issues"
+  },
+  "homepage": "https://github.com/IvanPakhomov/htest#readme",
+  "description": ""
 }

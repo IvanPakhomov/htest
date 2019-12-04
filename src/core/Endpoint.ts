@@ -25,9 +25,15 @@ export class Endpoint extends Base implements EndpointInterface {
         validateStatus: status => status < 500
       });
 
+      let payload = response.data;
+
+      if (Object.keys(payload).length == 1) {
+        payload = payload.data;
+      }
+
       return {
         status: response.status,
-        data: response.data
+        data: payload
       };
     } catch (err) {
       console.error(err);
